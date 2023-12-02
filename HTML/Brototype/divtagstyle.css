@@ -1,0 +1,29 @@
+.outer{
+    height: 500px;
+    width: 1000px;
+    background-color: black;
+}
+.inner1{
+    height: 200px;
+    width: 400px;
+    background-color: aqua;
+    float: left;
+}
+.inner2{
+    height: 200px;
+    width: 400px;
+    background-color: red;
+    float: left;
+}
+.inner3{
+    height: 200px;
+    width: 400px;
+    background-color: teal;
+    float: left;
+}
+.inner4{
+    height: 200px;
+    width: 400px;
+    background-color:brown;
+    float: left;
+}

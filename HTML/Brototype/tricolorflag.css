@@ -1,0 +1,49 @@
+body{
+    background-color: beige;
+    height: 170vh;
+}
+#outer{
+    height: 450px;
+    width: 1000px;
+    background-color: lightblue;
+    border-style: solid;
+    border-color: #000;
+    margin-left: 135px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+   
+}
+#inner1{
+    height: 150px;
+    width: 1000px;
+    background-color: orangered;
+    border-color: black;
+}
+#inner2{
+    height: 150px;
+    width: 1000px;
+    background-color: white;
+}
+#inner3{
+    height: 150px;
+    width: 1000px;
+    background-color: green; 
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin-left: 425px;
+}
+.txt{
+    background-color: rgba( rgb(238, 236, 96), rgb(238, 236, 96), rgb(238, 236, 96), 1.0);
+    opacity: 1.0;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+video{
+    height: 500px;
+    width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,14 @@
+.content {
+        
+        background-color:teal;
+        text-align: center;
+        color: red;
+        border: solid 1px;
+        height: 200px;
+        width: 800px;
+
+}
+body{
+        height: 10;
+        background-image: url(/HTML/Brototype/videos/download.jpeg);
+}
