@@ -701,69 +701,107 @@
                 transform: translateY(0);
             }
         }
+        
+       /* Responsive Design */
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content .subtitle {
-                font-size: 1.2rem;
-            }
-            .hero-content p{
-                    padding-left: 16px;
-                    padding-right: 16px;
-            }
-            .about-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .profile-pic {
-                width: 200px;
-                height: 200px;
-                font-size: 3rem;
-            }
-            .container-about {
-    max-width: 1750px;
-    margin: 0 auto;
-    padding: 5px 10px;
-    padding-left: 45px;
-    padding-right: 50px;
-            }
-            .section-title {
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .container, .container-about {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
+  }
+  .profile-pic {
+    width: 180px;
+    height: 180px;
     font-size: 3rem;
-    margin-bottom: 4rem;
-    color: #ffffff;
-    position: relative;
-    font-weight: 800;
-    padding-right: -22px;
+  }
 }
-            .about-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.9);
-    padding-left: 16px;
-    padding-right: 16px;
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .hero {
+    font-size: large;
+    padding-top: 110px;
+    min-height: 70vh;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content .subtitle {
+    font-size: 1rem;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    font-size: 2rem;
+  }
+  .skills-grid,
+  .personal-info,
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .timeline-item {
+    margin-left: 0;
+    padding: 1.2rem;
+  }
+  .timeline-item::before,
+  .education-timeline::before {
+    display: none;
+  }
+  .container-about {
+    padding: 0 8px;
+  }
 }
-            .about {
-            background-image: url('https://github.com/alphaxivix/ThisAboutMe/blob/portfolio/Untitled%20design%20(6).png'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat;
-        }
+
+/* Extra Small Devices (<= 480px) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content .subtitle {
+    font-size: 0.9rem;
+  }
+  .btn, .btn-primary, .btn-secondary {
+    font-size: 0.85rem;
+    padding: 10px 15px;
+  }
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
+}
+
 
         /* Smooth scrolling */
         html {
