@@ -682,6 +682,12 @@
             color: #667eea;
         }
 
+        #about-section2 {
+            background-image: url('https://alphaxivix.github.io/ThisAboutMe/Untitled%20design%20(4)%20(1).png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
         /* Footer */
         footer {
             background: #333;
@@ -707,9 +713,9 @@
 /* Tablet (<= 1024px) */
 @media (max-width: 1024px) {
   .container, .container-about {
-    max-width: 100%;
-    padding: 0 10px;
-  }
+        padding: 0 8px;
+        padding-top: 37rem;
+    }
   .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -720,6 +726,44 @@
     height: 180px;
     font-size: 3rem;
   }
+  .personal-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .5rem;
+    margin-top: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.hero-content h1 {
+    font-size: 2rem;
+  }
+.hero-content p {
+    font-size: .96rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.85;
+    animation: fadeInUp 1s ease 0.4s both;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+    .hero-content .subtitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-top: 0rem;
+    }
+
+    #about-section2 {
+    background-image: url('https://alphaxivix.github.io/ThisAboutMe/Untitled%20design%20(8).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.follower,
+  .orbiter {
+    display: none !important;
+  }
+
 }
 
 /* Mobile (<= 768px) */
@@ -745,11 +789,23 @@
     min-height: 70vh;
   }
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-  .hero-content .subtitle {
-    font-size: 1rem;
-  }
+      .hero-content .subtitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-top: .5rem;
+    }
+  .hero-content p {
+    font-size: .96rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.85;
+    animation: fadeInUp 1s ease 0.4s both;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
   .profile-pic {
     width: 120px;
     height: 120px;
@@ -773,18 +829,54 @@
     display: none;
   }
   .container-about {
-    padding: 0 8px;
+        padding: 0 8px;
+        padding-top: 37rem;
+    }
+  .personal-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .5rem;
+    margin-top: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+#about-section2 {
+    background-image: url('https://alphaxivix.github.io/ThisAboutMe/Untitled%20design%20(8).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.follower,
+  .orbiter {
+    display: none !important;
   }
+      .container-about {
+        padding: 0 8px;
+        padding-top: 34rem;
+    }
+
 }
 
 /* Extra Small Devices (<= 480px) */
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  .hero-content .subtitle {
-    font-size: 0.9rem;
-  }
+      .hero-content .subtitle {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-top: .5rem;
+    }
+  .hero-content p {
+    font-size: .96rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.85;
+    animation: fadeInUp 1s ease 0.4s both;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
   .btn, .btn-primary, .btn-secondary {
     font-size: 0.85rem;
     padding: 10px 15px;
@@ -794,12 +886,37 @@
     height: 80px;
     font-size: 1rem;
   }
+   .container-about {
+        padding: 0 8px;
+        padding-top: 37rem;
+    }
   .section-title {
     font-size: 1.3rem;
   }
   .about-text h3 {
     font-size: 1.2rem;
   }
+  .personal-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .5rem;
+    margin-top: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+#about-section2 {
+    background-image: url('https://alphaxivix.github.io/ThisAboutMe/Untitled%20design%20(8).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 110rem; /* instead of 650px */
+    padding: 3rem 0;
+}
+.follower,
+  .orbiter {
+    display: none !important;
+  }
+
 }
 
 
@@ -881,7 +998,7 @@
         </div>
     </section>
 
-    <section id="about" style="background-image: url('https://alphaxivix.github.io/ThisAboutMe/Untitled%20design%20(4)%20(1).png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <section id="about-section2" >
 
         <div class="container-about">
             <h2 class="section-title fade-in">About Me</h2>
@@ -1034,12 +1151,12 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h4>Email</h4>
-                        <a href="mailto:alphaxivix409@gmail.com">alphaxivix409@gmail.com</a>
+                        <a href="mailto:alphaxivix409@gmail.com">abelprinceebenezer@gmail.com</a>
                     </div>
                     
                     <div class="contact-item">
                         <h4>Phone</h4>
-                        <a href="tel:+919947947905">+91 9947947905</a>
+                        <a href="tel:+919947947905">+91 ----------</a>
                     </div>
                     
                     <div class="contact-item">
