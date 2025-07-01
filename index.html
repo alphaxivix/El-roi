@@ -749,6 +749,36 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .follower {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.orbiter {
+  position:static;
+  width: 3px;
+  height: 4px;
+  background: rgb(255, 251, 2);
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: orbit 2s linear infinite;
+  transform-origin: 7px 7px;
+  top: 7px;
+  left: 7px;
+}
+
+@keyframes orbit {
+  0%   { transform: rotate(0deg) translateX(7px); }
+  100% { transform: rotate(360deg) translateX(7px); }
+}
+
     </style>
 </head>
 <body>
@@ -765,7 +795,10 @@
             </ul>
         </nav>
     </header>
-
+<!-- Main follower circle -->
+  <div class="follower" id="follower">
+  <div class="orbiter"></div>
+</div>
     <section id="home" class="hero" style="background-image: url('https://alphaxivix.github.io/ThisAboutMe/Untitled%20design%20(7).png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <div class="hero-content">
             <h1>Abel C Prince</h1>
@@ -1027,5 +1060,29 @@
             });
         });
     </script>
+    </script>
+  <script>
+  const follower = document.getElementById('follower');
+
+  let mouseX = 0, mouseY = 0;
+  let currentX = 0, currentY = 0;
+  const speed = 0.2; // Adjust for delay/smoothing (0.1 = smooth, 1 = instant)
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animate() {
+    currentX += (mouseX - currentX) * speed;
+    currentY += (mouseY - currentY) * speed;
+
+    follower.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
 </body>
 </html>
